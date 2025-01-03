@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                             http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <display-name>Online Bookstore</display-name>
+
+    <!-- Dispatcher Servlet -->
+    <servlet>
+        <servlet-name>DispatcherServlet</servlet-name>
+        <servlet-class>DispatcherServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DispatcherServlet</servlet-name>
+        <url-pattern>/</url-pattern>
+    </servlet-mapping>
+
+    <!-- BookRegistrationServlet (Original) -->
+    <servlet>
+        <servlet-name>BookRegistrationServletOriginal</servlet-name>
+        <servlet-class>BookRegistrationServletOriginal</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookRegistrationServletOriginal</servlet-name>
+        <url-pattern>/registerBookOriginal</url-pattern>
+    </servlet-mapping>
+
+    <!-- BookRegistrationServlet (Updated) -->
+    <servlet>
+        <servlet-name>BookRegistrationServletUpdated</servlet-name>
+        <servlet-class>BookRegistrationServletUpdated</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BookRegistrationServletUpdated</servlet-name>
+        <url-pattern>/registerBookUpdated</url-pattern>
+    </servlet-mapping>
+
+</web-app>
