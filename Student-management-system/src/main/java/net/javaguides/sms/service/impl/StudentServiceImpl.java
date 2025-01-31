@@ -35,10 +35,16 @@ public class StudentServiceImpl implements StudentService{
 		return studentRepository.findById(id).get();
 	}
 	
-	@Transactional
 	@Override
 	public Student updateStudent(Student student) {
 		
 		return studentRepository.save(student);
+	}
+
+	@Override
+	public void deletStudentById(Long id) {
+		studentRepository.deleteById(id);
+		
+		
 	}
 }

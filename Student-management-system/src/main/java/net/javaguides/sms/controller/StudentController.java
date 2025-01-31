@@ -6,7 +6,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.PutMapping;
 
 import net.javaguides.sms.entity.Student;
 import net.javaguides.sms.service.StudentService;
@@ -54,7 +53,7 @@ import net.javaguides.sms.service.StudentService;
 		return "edit_student";
 	}
 	
-	@PostMapping("/students/{id}")
+	@PostMapping("/students/update/{id}")
 	public String updateStudent(@PathVariable long id,
 			@ModelAttribute("student") Student student, Model model) {
 		
@@ -79,10 +78,16 @@ import net.javaguides.sms.service.StudentService;
 	    System.out.println("Student updated successfully!");
 		return "redirect:/students";
 		
-		
-		
-		
+			
 	}
+	//handler method to handle delete student request
+	@GetMapping("/students/delete/{id}")
+	public String deleteStudent(@PathVariable long id) {
+		studentService.deletStudentById(id);
+		return "redirect:/students";
+		
+}
+	
 	
 
 }
