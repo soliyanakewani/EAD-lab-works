@@ -4,11 +4,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.ComponentScan;
 
 import net.javaguides.sms.entity.Student;
 import net.javaguides.sms.repository.StudentRepository;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = "net.javaguides.sms")
+@ComponentScan(basePackages = {"net.javaguides.sms", "net.javaguides.sms.config"})
 public class StudentManagementSystemApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {

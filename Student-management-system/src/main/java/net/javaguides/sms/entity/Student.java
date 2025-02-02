@@ -1,6 +1,7 @@
 package net.javaguides.sms.entity;
 
 import jakarta.persistence.Column;
+import jakarta.persistence.*;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -26,20 +27,27 @@ public class Student {
 	@Column(name= "email")
 	private String email;
 	
+
  //default constructor for the sake of the hibernate 
 	public Student() { 
 		
 	}
 	
-	public long getId() {
-		return id;
-	}
-	public Student(String firstName, String lastName, String email) {
+	
+	public Student(String firstName, String laststName, String email) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
+
 	}
+	
+	//getters and setters
+	
+	public long getId() {
+		return id;
+	}
+	
 	public void setId(long id) {
 		this.id = id;
 	}
@@ -61,6 +69,8 @@ public class Student {
 	public void setEmail(String email) {
 		this.email = email;
 	}
+	
+    
 	
 
 }

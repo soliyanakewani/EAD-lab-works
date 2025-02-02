@@ -1,0 +1,12 @@
+C:\Users\zoli\Documents\workspace-spring-tool-suite-4-4.27.0.RELEASE\Student-management-system\src\main\java\net\javaguides\sms\config\SecurityConfig.java
+C:\Users\zoli\Documents\workspace-spring-tool-suite-4-4.27.0.RELEASE\Student-management-system\src\main\java\net\javaguides\sms\controller\StudentController.java
+C:\Users\zoli\Documents\workspace-spring-tool-suite-4-4.27.0.RELEASE\Student-management-system\src\main\java\net\javaguides\sms\controller\TeacherController.java
+C:\Users\zoli\Documents\workspace-spring-tool-suite-4-4.27.0.RELEASE\Student-management-system\src\main\java\net\javaguides\sms\entity\Student.java
+C:\Users\zoli\Documents\workspace-spring-tool-suite-4-4.27.0.RELEASE\Student-management-system\src\main\java\net\javaguides\sms\entity\Teacher.java
+C:\Users\zoli\Documents\workspace-spring-tool-suite-4-4.27.0.RELEASE\Student-management-system\src\main\java\net\javaguides\sms\repository\StudentRepository.java
+C:\Users\zoli\Documents\workspace-spring-tool-suite-4-4.27.0.RELEASE\Student-management-system\src\main\java\net\javaguides\sms\repository\TeacherRepository.java
+C:\Users\zoli\Documents\workspace-spring-tool-suite-4-4.27.0.RELEASE\Student-management-system\src\main\java\net\javaguides\sms\service\impl\StudentServiceImpl.java
+C:\Users\zoli\Documents\workspace-spring-tool-suite-4-4.27.0.RELEASE\Student-management-system\src\main\java\net\javaguides\sms\service\impl\TeacherServiceImpl.java
+C:\Users\zoli\Documents\workspace-spring-tool-suite-4-4.27.0.RELEASE\Student-management-system\src\main\java\net\javaguides\sms\service\StudentService.java
+C:\Users\zoli\Documents\workspace-spring-tool-suite-4-4.27.0.RELEASE\Student-management-system\src\main\java\net\javaguides\sms\service\TeacherService.java
+C:\Users\zoli\Documents\workspace-spring-tool-suite-4-4.27.0.RELEASE\Student-management-system\src\main\java\net\javaguides\sms\StudentManagementSystemApplication.java
