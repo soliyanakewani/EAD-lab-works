@@ -20,7 +20,7 @@ import net.javaguides.sms.service.StudentService;
 		this.studentService = studentService;
 	}
 	
-	 //handler method to handle list students and return mode and view
+	 //handler method 
 	
 	@GetMapping("/students")
 	 public String listStudents(Model model) {
@@ -62,7 +62,7 @@ import net.javaguides.sms.service.StudentService;
 	    
 
 		
-	//first get student from database by id
+	// get student from database by id
 		Student existingStudent = studentService.getStudentById(id);
 
 
@@ -72,7 +72,7 @@ import net.javaguides.sms.service.StudentService;
 		existingStudent.setLastName(student.getLastName());
 		existingStudent.setEmail(student.getEmail());
 		
-	//then saving updated student object
+	// saving updated student object
 		studentService.updateStudent(existingStudent);
 		
 	    System.out.println("Student updated successfully!");
